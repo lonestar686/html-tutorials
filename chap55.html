@@ -1,0 +1,33 @@
+<html> 
+    <head>
+        <title> Chapter 55 Forms: Select box </title>
+    </head>
+    <body>
+        <form action="send-maikl.php" method="POST">
+            Last name: <br>
+            <input type="text" name="surname" size="25" maxlength="40">
+            <br><br>
+            How did you find us? <br>
+            <input type="radio" name="found-thru" value="Google"> Google
+            <input type="radio" name="found-thru" value="Review" checked="checked"> Review
+            <input type="radio" name="found-thru" value="Friend"> Friend
+            <br><br>
+            How would you describe your site? <br>
+            <input type="checkbox" name="feedback" value="Wonderful" checked="checked"> Wonderful
+            <input type="checkbox" name="feedback" value="Fabulous"> Fabulous
+            <input type="checkbox" name="feedback" value="Brilliant"> Brilliant
+            <br><br>
+            Your state: <br>
+            <select name="current-state">
+                <option value="AL"> Alabama </option>
+                <option value="TX"> Texas </option>
+                <option value="AZ"> Arizona </option>
+            </select>
+            <br><br>
+            Messages: <br><br>
+            <textarea name="message" rows="4" cols="30"></textarea>
+            <br><br>
+            <input type="submit" value="Send email message">
+        </form>
+    </body>
+</html>
